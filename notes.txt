@@ -162,5 +162,156 @@
                 -> Python cleans up rating memory as it's never used in program 
 
 
+20th Jan 2026
+===============
+
+    -> Python is an "Interpreted" Language
+
+        -> An Interpreted Language executes the code "line by line" 
+
+    -> "Compiled" Language
+
+        -> A Compiled Language translates the code into Machine Code then executes all the code at once 
+
+        -> Java is an Compiled Language
+
+        -> NOTE: Performance wise "Compiled" Languages are "FASTER"
+
+    
+    -> Considering above point, still why python ?
+
+        -> Easy To Understand / Easy Readability / Dynamic Typed (Developer Perspective)
+
+        -> Development SPEED 
+
+        -> Python is best PROTO TYPE Language as we can develop Applications Much Faster 
+
+    
+    -> Programming Paradigms 
+
+        -> A programming paradigm is a relatively high-level way to conceptualize 
+        and structure the implementation of a computer program.
+
+        -> Problem: How To Reach Institute ?
+
+            -> Solution 1: I'll come by Walk 
+            -> Solution 1: I'll come by Bike
+            -> Solution 1: I'll come by Car  
+
+        -> We have Two Popular Types 
+
+            -> Imperative Approach 
+
+                -> Focus is on "HOW TO DO" 
+
+                -> Object Oriented Programming (OOP)
+
+            -> Declarative Approach 
+
+                -> Focus is on "WHAT TO DO" 
+
+                -> Functional Oriented Programming
+
+    -> NOTE: Python uses multi paradigm approach i.e we use 
+    Imperative Approach & Declarative Approach 
+
+    -> Imperative Code With Python 
+
+                def get_user_emails(users):
+                        emails = []  # Step-by-step building the result
+
+                        for i in range(len(users)):         # Loop manually
+                            user = users[i]                 # Fetch each user
+
+                            if user.get("email") is not None:   # Check condition manually
+                                emails.append(user["email"])    # Manually add to list
+
+                        return emails
 
 
+                    # Sample users list
+                    users = [
+                        {"name": "Mike", "email": "mike@gmail.com"},
+                        {"name": "John", "email": None},
+                        {"name": "Sara", "email": "sara@gmail.com"}
+                    ]
+
+                    print(get_user_emails(users))
+        
+
+    -> Declarative Code With Python 
+
+                emails = [u["email"] for u in users if u["email"] is not None]
+
+
+    -> Key Features Of Python / Why Python ?
+
+        -> Simplicity & Easy Readability 
+
+        -> Versatility 
+
+            -> Data Oriented / Full Stack / Cloud / DevOps etc 
+        
+        -> Multi Paradigm Programming Language (OOP / Functional)
+
+        -> Dynamic Typed 
+
+        -> Open Source (FREE)
+
+        -> High Level Language (Just Like English)
+
+        -> One of the Most Popular Language in industry now 
+
+            -> List Of Popular Applications Where Python is used 
+
+            ->  https://en.wikipedia.org/wiki/Programming_languages_used_in_most_popular_websites  
+
+
+    -> System Requirements For This Course (Practicals)
+
+        -> Hardware 
+
+            -> i3 / i5 processor     
+            -> 4 GB RAM / 8 GB RAM 
+            -> 500 GB HDD / SSD 
+
+        -> Software 
+
+            -> Install Python Interpreter 
+
+                -> https://www.python.org/
+
+                -> In Windows (python)
+
+                -> In MAC OS (python/python3)
+
+            -> IDE: Integrated Development Environment 
+
+                -> Tool for writing code (syntax highlight, auto code completion, install plugins etc)
+
+                -> Visual Studio Code (VS Code)   
+
+    -> Python Setup 
+
+        -> open command prompt (windows)
+
+            -> python --version 
+            -> if not found download exe and install
+
+        -> open terminal (mac)
+
+            -> python3 --version 
+
+    -> Where To Write Python Code ?
+
+        -> Command Line Mode (not recommended)
+
+            -> We write the code in command prompt(win) / terminal(mac)
+
+            -> Temporary, once we close the session all code is reset 
+
+        -> Script Mode (recommended)
+
+            -> We write the code in files using IDE i.e Visual Studio Code 
+
+            -> Permanent, stored on disk 
