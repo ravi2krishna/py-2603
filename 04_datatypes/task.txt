@@ -1,0 +1,35 @@
+
+-> Declare variables to store student information like:
+    Student ID 
+    Student Name 
+    Student Age 
+    Quiz Score
+    Assignment Score
+    Exam Score
+    Student Attendance
+
+-> Calculate
+
+    -> Total score
+    -> Average Score 
+
+-> Determine Student Passed Or Not based on Average Score above 75 
+
+-> Update Attendance Value by one using Increment 
+
+-> Determine Award Eligibility i.e To Qualify for Award 
+
+    -> Requires high attendance i.e 90 and above
+
+    -> Student Should be Passed
+
+-> Display 
+
+    Student ID 
+    Student Name 
+    Quiz Score
+    Assignment Score
+    Exam Score
+    Student Attendance
+
+

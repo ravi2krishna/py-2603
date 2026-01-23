@@ -110,3 +110,30 @@ print(dir(employee_ids))
 data = 123456789
 print(type(data))
 print(dir(data))
+
+# Identity Operators
+n1 = 10
+n2 = 10 
+print(id(n1))
+print(id(n2))
+print(n1 is n2)
+print(n1 == n2)
+
+n1 = [1,2]
+n2 = [1,2]
+print(n1 == n2)
+print(n1 is n2) 
+print(id(n1))
+print(id(n2))
+
+# Bitwise Operators
+n1 = 5 # 0000000000000101
+n2 = 3 # 0000000000000011
+       # 0000000000000001 -> 1
+print(n1 & n2)
+print(5 & 3) 
+
+n1 = 5 # 0000000000000101
+n2 = 3 # 0000000000000011
+       # 0000000000000111
+print(n1 | n2)
