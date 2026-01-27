@@ -107,3 +107,29 @@ elif marks >= 35:
 else:
     print("FAIL")
     
+# match/case - 1
+error_code = int(input("What Code Did You See: "))
+match error_code:
+    case 403:
+        print("Forbidden Error")
+    case 404:
+        print("Not Found Error")
+    case 200:
+        print("Success - OK")
+    case 502:
+        print("Internal Server Error")
+    case _:
+        print("Invalid Error Code")
+        
+# match/case - 2
+user_role = input("Enter Your Role: ")
+match user_role:
+    case "lead" | "manager":
+        print("You Have List, Read & Write Access") 
+    case "developer" | "tester":
+        print("You Have List & Read Access") 
+    case "guest":
+        print("You Have List Access")
+    case _:
+        print("Access Denied")
+        

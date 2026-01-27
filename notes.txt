@@ -731,3 +731,88 @@
                     statements
                 else:
                     statements
+
+27th Jan 2026
+===============
+
+    -> The match/case statement (introduced in Python 3.10) is used for 
+    structural "pattern matching", providing a cleaner, more powerful 
+    alternative to long if/elif chains. 
+
+    -> In other programming languages we call it as switch-case 
+
+    -> syntax 
+
+            match expression:
+                case pattern_1:
+                    # code block 1    
+                case pattern_2:
+                    # code block 2
+                case pattern_3:
+                    # code block 3
+                .
+                .
+                .
+                case _:
+                    # default code block
+
+    -> Nested Conditionals 
+
+        -> Nested conditions in Python involve placing an if or if/else statement 
+        inside another if, elif, or else block.
+
+        -> This allows the program to evaluate multiple criteria sequentially, 
+        where the inner condition is only checked if the outer condition is true. 
+
+    
+    -> Looping Structures / Statements (Iteration Statements)
+
+        -> Loops in Python are used to "repeatedly" execute a block of code 
+        until a specific condition is met or for each item in a sequence.
+
+        -> The two primary types of loops are "for" loops and "while" loops. 
+
+        -> When you want to do a task multiple times, use loops 
+
+        -> "while" loop
+
+            -> while loops execute a block of code repeatedly 
+            as long as a specified condition remains True
+
+            -> syntax
+
+                while condition:
+                    statements 
+
+            -> NOTE: We use while generally, when we don't know number of
+            Iterations/Repetitions in advance
+
+        -> "for" loop
+
+            -> for loop is used to iterate over a sequence 
+                (like a list, tuple, string, or range) 
+
+            -> NOTE: For loop executes a block of code once for each item in the sequence. 
+
+            -> syntax 
+
+                for variable in sequence:
+                    statement
+
+            -> NOTE: We use for generally, when we know number of
+            Iterations/Repetitions in advance
+
+        
+        -> range() 
+
+                -> The range() function in Python generates an immutable sequence of numbers. 
+                It is commonly used for iterating a specific number of times in for loops. 
+
+                -> range(start, stop, step): This form generates a sequence of numbers starting 
+                from start (inclusive) up to, but not including, the stop value, 
+                with an increment of step. The step can be positive or negative.
+
+                    range(start, stop, step)
+                        -> start default is 0 (included) (inclusive)
+                        -> stop at this value (excluded) (exclusive)
+                        -> step is increment (default step is 1)
