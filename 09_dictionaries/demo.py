@@ -99,3 +99,42 @@ print(data)
 
 # Real World Dictionaries Looks Like JSON Data 
 # https://media.licdn.com/dms/image/v2/D4D12AQGwOUMYbhUu-A/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1682148646113?e=2147483647&v=beta&t=qeCSY5Ktzx2jkeq7suYaSBV_-OS_18P-yuabrIhNWcU
+
+students = {
+    "101": {
+        "name": "Ravi",
+        "email": "ravi2krishna@gmail.com",
+        "courses": ["python","django","sql"],
+        "courses_fee": (10000,8000,5000)
+    },
+    "102": {
+        "name": "John",
+        "email": "john@yahoo.com",
+        "courses": ["devops","cloud","python"],
+        "courses_fee": (25000,20000,10000)
+    }    
+} 
+
+# Above Covers all the data structures we learnt so far i.e lists, tuples & dictionaries
+
+# Get all students data 
+print(students)
+print("=" * 50)
+# Get me student 102 Info Only 
+# print(students[102]) # KeyError: 102
+print(students["102"])
+
+# Access 2nd Course Enrolled By John 
+# {'name': 'John', 'email': 'john@gmail.com', 'courses': ['devops', 'cloud', 'python'], 'courses_fee': (25000, 20000, 10000)}
+print(students["102"]['courses'])
+print(students["102"]['courses'][1])
+print("2nd Course Enrolled By John is: ", students["102"]['courses'][1])
+
+# Check John is google customer or not 
+if students["102"]['email'].endswith("@gmail.com"):
+    print("Google customer")
+else:
+    print("Not Google customer")
+    
+# List Methods / Operations
+print(dir(data))
