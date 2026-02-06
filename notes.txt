@@ -1173,3 +1173,95 @@
             -> U - Unique 
             -> U - Unordered 
             -> U - Unindex 
+
+
+6th Feb 2026
+===============
+
+    -> Set Methods / Operations 
+
+    -> NOTE: Sets are Mutable 
+
+    -> Set Characteristics 
+
+        -> Mutable: Sets are Mutable in nature(Can be Changed) 
+
+        -> UnOrdered: Sets are UnOrdered(Order Not Preserved)
+
+        -> Duplicates: Sets Doesn't Allow Duplicates 
+
+    
+    -> Frozenset
+
+        -> Frozenset is a data structure which allows you to store multiple values
+        in a single variable, each value is separated with , 
+
+        -> Frozenset are represented using or using "Frozenset" class
+
+        -> Accessing Data In Frozenset 
+
+        -> Like in Strings, we DON'T have index concept in Frozenset 
+
+        -> No Indexing 
+        
+        -> No Slicing 
+
+        -> Loops we can Apply 
+
+        -> Operators we can Apply 
+
+        -> Conditionals we can Apply 
+
+        -> Duplicates Not Allowed i.e Removes Duplicates By Default
+
+        -> Insertion Order Is Not Preserved 
+
+        -> NOTE: To Easily Remember Sets use (UUU)
+
+            -> U - Unique 
+            -> U - Unordered 
+            -> U - Unindex 
+
+
+        -> Frozenset Methods / Operations 
+
+        -> NOTE: Frozenset are Immutable 
+
+        -> Frozenset Characteristics 
+
+            -> Immutable: Frozenset are Immutable in nature(cannot be Changed) 
+
+            -> UnOrdered: Sets are UnOrdered(Order Not Preserved)
+
+            -> Duplicates: Sets Doesn't Allow Duplicates 
+
+
+    -> How / When To Use Above Data Structures In Applications ?
+
+        -> Lists            (When To Use)
+        -> Tuples           (When To Use)
+        -> Dictionaries     (When To Use)
+        -> Sets             (When To Use)
+
+    
+    -> CRUD Applications 
+
+        -> CRUD stands for Create, Read, Update, and Delete, representing the four fundamental,
+        persistent operations for managing data within databases and software applications. 
+        
+        -> These operations allow users to add new data, view existing data, modify data, and 
+        remove data, forming the backbone of most web applications and user interfaces. 
+
+        -> We CRUD for applications that require persistent storage, such as content management 
+        systems, e-commerce sites, and customer relationship management (CRM) tools. 
+        Examples include online forms, user profile pages, and dashboards for managing records.
+
+            -> C - CREATE
+            -> R - READ
+            -> U - UPDATE
+            -> D - DELETE 
+
+        -> https://drive.google.com/file/d/1Yabj4nFUx_1g6eAw3EsEsopEWxivTK2Z/view?usp=sharing
+
+        -> https://drive.google.com/file/d/1gpWYycwbeRWrmShF5Hc1V86KcIVYJCfE/view?usp=sharing
+

@@ -68,3 +68,12 @@ print(data) # Order not preserved
 
 # Set Methods / Operations
 print(dir(data))
+
+# Frozenset
+data = frozenset({10,20,30,40,50})
+print(type(data))
+data = frozenset({10,20,30,40,50,10,20})
+print(data)
+
+# Frozenset Methods / Operations
+print(dir(data))
