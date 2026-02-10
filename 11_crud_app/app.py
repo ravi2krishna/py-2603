@@ -5,6 +5,9 @@
 # System Setup -> System Info - READ ONLY (Tuple)
 SYSTEM_INFO = ("Edify Technologies","Student Management System","v1")
 
+# Admin Info - READ ONLY (Tuple)
+ADMIN_INFO = ("9900998800","admin@edify.com")
+
 # Displaying System Info On Start Up 
 print("=" * 50)
 print(f"Welcome To: {SYSTEM_INFO[0]}")
@@ -109,11 +112,58 @@ while True:
         print("=" * 30)
         print("Reading Student")
         print("=" * 30)
+        # {'101': {'name': 'Ravi', 'scores': [90, 80, 70, 60], 'skills': {'git', 'python', 'java'}}}
+        # items(): used to get both keys & values 
+        for sid, data in students.items():
+            name = data['name']
+            scores = data['scores']
+            skills = data['skills']
+            
+            # Average Score 
+            total_score = 0 # 90 + 80 + 70 + 60
+            count_scores = 0 # 1 2 3 4
+            
+            for score in scores:
+                total_score += score # 70
+                count_scores += 1
+                
+            avg_score = total_score / count_scores
+
+            # Highest Score 
+            high_score = scores[0]
+            
+            for score in scores:
+                if score > high_score:
+                    high_score = score
+            
+            # Lowest Score 
+            low_score = scores[0]
+            
+            for score in scores:
+                if score < low_score:
+                    low_score = score
+                    
+            # Skills Count  
+            skills_count = 0
+            for skill in skills:
+                skills_count += 1
+                
+        print(f"ID: {sid}")
+        print(f"Name: {name}")
+        print(f"All Scores: {scores}")
+        print(f"Average Score: {avg_score}")
+        print(f"Highest Score: {high_score}")
+        print(f"Lowest Score: {low_score}")
+        print(f"All Skills: {skills}")
+        print(f"Skills Count: {skills_count}")
+        
     
     elif choice == "5":
         print("=" * 30)
         print("Exit Application")
         print("=" * 30)
+        print(f"Admin Phone Number: {ADMIN_INFO[0]}")
+        print(f"Admin Email Address: {ADMIN_INFO[1]}")
         break
     
     else:
