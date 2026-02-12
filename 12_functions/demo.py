@@ -212,3 +212,122 @@ def bank_transactions(**transactions):
 bank_transactions(jan=2000,feb=3500,mar=6000) 
 
 print("=" * 20) 
+
+# Without Return 
+def add(a,b):
+    a + b 
+    
+add(10,20)
+print(add(10,20))
+
+# With Return 
+def add(a,b):
+    return a + b 
+
+add(10,20)
+print(add(10,20))
+
+# function composition - function calling another function
+def sub(c,d,e): # add c & d, then minus e -> c + d - e
+    return add(c,d) - e
+
+print(sub(3,4,5)) 
+
+# return - make sure it's the last part of statement to be executed
+def add(a,b):
+    print("Calculation Started")
+    return a + b 
+    print("Calculation Completed") # Code is structurally unreachable
+
+print(add(200,100))
+
+# With Functions & parameters
+def math_ops(num1,num2):
+    return num1 + num2
+    return num1 - num2
+    return num1 * num2
+    return num1 / num2
+
+print(math_ops(30,60))
+
+# With Functions & parameters
+def math_ops(num1,num2,operator):
+    if operator == "+":
+        return num1 + num2
+    elif operator == "-":
+        return num1 - num2
+    elif operator == "*":
+        return num1 * num2
+    elif operator == "/":
+        return num1 / num2
+    else:
+        return "Invalid Operator"
+
+print(math_ops(40,60,"+"))
+print(math_ops(40,60,"*"))
+print(math_ops(40,60,"$"))
+
+# Local Scope
+def add():
+    la = 10 # local variable 
+    lb = 20 # local variable 
+    print(la) # accessed within function
+    print(lb) # accessed within function
+
+add()
+
+# print(la) # NameError: name 'la' is not defined
+
+# Local Scope
+def add(la,lb): # local variables la & lb
+    print(la) # accessed within function
+    print(lb) # accessed within function
+
+add(30,40)
+
+# print(la) # NameError: name 'la' is not defined
+
+# Global Scope
+ga = 100 # global variable
+def add(la,lb): # local variables la & lb
+    print(la) # accessed within function
+    print(lb) # accessed within function
+    print(ga) # global variable, accessed within function
+
+add(30,40)
+print(ga) # global variable, accessed outside function
+
+# name conflicts 
+ga = 100 # global variable
+def add(la,lb,ga): # local variables la & lb -> ga is global variable
+    print(la) # accessed within function
+    print(lb) # accessed within function
+    print(ga) # local variable, as per preference
+
+add(30,40,50)
+print(ga)
+
+# name conflicts 
+ga = 100 # global variable
+def add(la,lb,ga): # local variables la & lb -> ga is global variable
+    print(la) # accessed within function
+    print(lb) # accessed within function
+    print(ga) # local variable, as per preference
+    print(globals()['ga']) # global variable, accessed within function
+
+add(30,40,50)
+
+# global variables outside function
+count = 0
+print(count)
+count += 1
+print(count)
+
+# global variables inside function
+count = 0
+def increment():
+    global count 
+    count += 1 # UnboundLocalError: cannot access local variable 'count' where it is not associated with a value
+    return count 
+
+print(increment())
