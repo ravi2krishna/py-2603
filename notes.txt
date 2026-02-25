@@ -356,13 +356,13 @@
             -> NOTE: All the above keywords hold some special meaning to Python Interpreter
 
     
-    -> Python Rules / Syntax 
+    -> Python Rules / Syntax / Best Practices
 
         -> Any python file we write, should have extension as .py 
 
         -> Python ignores lines that start with # 
 
-        -> Comments are represented using # 
+        -> Comments are lines that start with # 
 
         -> When working with numeric values(1,2,10,-1,3.5,5.5 etc)
         we can directly use print() with numerics 
@@ -1798,3 +1798,27 @@
         -> json.dumps()	Serializes a Python object to a JSON-formatted string ("dump string").
 
         -> json.loads()	Deserializes a JSON-formatted string to a Python object ("load string").
+
+
+25th Feb 2026
+===============
+
+    -> Student Management System - With Persistent Storage (Students Info On Disk)
+
+    
+    -> Exception Handling
+
+        -> Exception: It's an "Error", which might occur during the program execution 
+
+        -> By default when python encounters an Error, 
+        it abruptly "STOPS" the program execution
+
+
+    -> To change the above default behavior, and handle the 
+    Exceptions by yourself, we need following
+
+        -> try: used to keep the code, that will cause error 
+
+        -> except: used to keep th code, that should run when error occurs 
+
+
