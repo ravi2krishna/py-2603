@@ -2164,3 +2164,55 @@
             -> Declared used @staticmethod decorator 
 
             -> Used as utilities / helper functions 
+
+
+16th Mar 2026
+===============
+
+    -> OOP Principals 
+
+        -> Inheritance
+        -> Encapsulation
+        -> Abstraction
+        -> Polymorphism
+
+    -> Inheritance 
+
+        -> Inheritance is a core OOP concept where a new class, 
+        called a subclass or child class, acquires the properties(vars) and methods 
+        of an existing class, called a superclass or parent class.
+
+        -> Main purpose of Inheritance is Code Reusability
+
+        -> Syntax 
+
+            class Parent:
+                pass 
+
+            class Child(Parent):
+                pass 
+
+    
+    -> Without & With Inheritance 
+
+    -> Types Of Inheritance
+
+        -> Single Level Inheritance
+
+            -> One Parent -> One Child 
+
+        -> Multi Level Inheritance
+
+            -> GrandParent -> Parent -> Child 
+
+        -> Multiple Inheritance
+
+            -> One Child -> Multiple Parents 
+
+        -> Hierarchical Inheritance
+
+            -> One Parent -> Multiple Child 
+
+        -> Hybrid Inheritance
+
+            -> Combination Of Types Of Inheritance
