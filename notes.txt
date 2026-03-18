@@ -2305,8 +2305,8 @@
             -> from abc import ABC, abstractmethod 
 
 
-        -> Create a class that inherits from ABC, inside this class
-        define one or more abstract methods using @abstractmethod decorator  
+        -> NOTE: To Achieve abstraction, Create a class that inherits from ABC, 
+        inside this class define one or more abstract methods using @abstractmethod decorator  
 
             -> NOTE: abstract methods have declarations, but no implementation 
             they typically contain pass 
@@ -2319,3 +2319,27 @@
 
             -> NOTE: Abstract Classes help you enforce Contract Like Behaviors
             
+
+18th Mar 2026
+===============
+
+    -> Polymorphism
+
+        -> Polymorphism in OOP is the ability to take on "many forms"
+
+        -> Polymorphism is achieved through techniques like 
+        "method overloading" and "method overriding"
+
+    
+    -> Method Overloading in OOP is the ability to "define multiple methods 
+    with the same name", but different parameter lists 
+    (number, type, or order of arguments) within a single class
+
+        -> NOTE: Python doesn't support Method Overloading
+
+    -> Method Overriding
+
+        -> When a subclass provides a new implementation of a method 
+        that already exists in parent class 
+
+    -> Polymorphism: https://images.news18.com/ibnlive/uploads/2018/02/Amazon-India-UPI-Payment-Option.jpg
