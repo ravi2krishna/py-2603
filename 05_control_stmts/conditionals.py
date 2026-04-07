@@ -7,9 +7,31 @@ print("Python")
 # print("Hello") # IndentationError: unexpected indent
 
 
+# Indentation defines the structure and hierarchy of "code blocks"
+
 # if condition - Incorrect Indentation
 # if True:
-# print("Python") # IndentationError: expected an indented block after 'if' statement on line 11
+# print("Student Passed") # IndentationError: expected an indented block after 'if' statement on line 11
+
+
+# if condition - Correct Indentation
+if True: 
+ print("Statement 1")
+ print("Statement 2")
+ print("Statement 3")
+ print("Statement N")
+ 
+if True: 
+  print("Statement 1")
+  print("Statement 2") # IndentationError: unexpected indent
+  print("Statement 3")
+  print("Statement N")
+  
+if True: 
+    print("Statement 1")
+    print("Statement 2") # IndentationError: unexpected indent
+    print("Statement 3")
+    print("Statement N")
 
 # if condition - Correct Indentation
 if True:
@@ -34,6 +56,9 @@ if True:
     print("Of") 
     print("Code") 
     print("Check")
+
+if False:
+    print("Let's see if this code runs")
     
 # if condition
 if 5 > 2:
@@ -125,11 +150,11 @@ match error_code:
 user_role = input("Enter Your Role: ")
 match user_role:
     case "lead" | "manager":
-        print("You Have List, Read & Write Access") 
+        print("You Have Read, Write & Delete Access") 
     case "developer" | "tester":
-        print("You Have List & Read Access") 
+        print("You Have Read & Write Access") 
     case "guest":
-        print("You Have List Access")
+        print("You Have Read Access")
     case _:
         print("Access Denied")
         

@@ -5,9 +5,12 @@
 # syntax - 1
 file = open("14_file_manage/file.txt","r")
 print(file)
+# NOTE: Here we need to "explicitly close" files after operations are performed
 print(file.closed) # still open 
 file.close() # explicitly close 
 print(file.closed) # now closed
+
+print("=" * 20)
 
 # syntax - 2
 with open("14_file_manage/file.txt","r") as file_data:

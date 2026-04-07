@@ -33,15 +33,18 @@ num = 10
 num *= 5 # short format 
 print(num)
 
-# Increment - increase a value, used in loops in future sessions 
+# Increment & Decrement increase or decrease a variable's value by one
+# Increment: Generally used in loops in future sessions
 count = 1
-# count++ # SyntaxError: invalid syntax
+print(count)
+# count++ # SyntaxError
 count += 1
 print(count)
 
-# Decrement - decrease a value, used in loops in future sessions 
+# Decrement: Generally used in loops in future sessions
 count = 10
-# count-- # SyntaxError: invalid syntax
+print(count)
+# count-- # SyntaxError
 count -= 1
 print(count)
 

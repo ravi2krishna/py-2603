@@ -130,7 +130,7 @@ s3 = {40,50}
 print(s2.issuperset(s3))
 print(s1.issuperset(s3))
 
-# isdisjoint(): checks if sets have common elements 
+# isdisjoint(): checks if sets have no common elements 
 s1 = {10,20,30,40,50}
 s2 = {60,70,80}
 s3 = {40,50}

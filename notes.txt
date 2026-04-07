@@ -470,7 +470,7 @@
             -> Assignment Operator is = (used for assigning a value to Variable)
 
             -> Compound Assignment Operators Combine Arithmetic Operators 
-                with Assignment Operators for "short hand code" (concise code)
+            with Assignment Operators for "short hand code" (concise code)
 
                 -> x = 10
                 -> x = x + 5 (long form)
@@ -478,6 +478,8 @@
 
                 -> x += 5 (short form)
                 -> x *= 5 (short form)
+
+                -> NOTE: x = x + 5 and x += 5 both does same Operation
 
             -> In Other Programming Languages we got Increment & Decrement Operators
 
@@ -655,7 +657,7 @@
         -> Indentation in Python is a fundamental and mandatory aspect of its "syntax", 
             used to define the structure and hierarchy of "code blocks". 
             Unlike many other programming languages that use curly braces or keywords 
-            to delineate blocks, Python relies entirely on "consistent" indentation.
+            to define blocks, Python relies entirely on "consistent" indentation.
 
         -> Using space as indentation (using spaces correctly is important)
 
@@ -663,7 +665,7 @@
             a single tab(4 spaces) for indentation, 
             the widely accepted and recommended standard.
 
-                -> At least one space but recommended is 4 space i.e tab 
+                -> At least one space is must, but recommended is 4 space i.e tab 
 
     
     -> Conditional Structures / Statements (Decision Making Statements)
